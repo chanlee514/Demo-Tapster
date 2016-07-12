@@ -40,8 +40,8 @@ gem 'autoprefixer-rails'
 
 # All the Databases (you can comment out the ones you don't need)
 gem 'pg'
-gem 'mysql2'
-gem 'sqlite3'
+# gem 'mysql2'
+# gem 'sqlite3'
 
 # PredictionIO
 gem 'predictionio'

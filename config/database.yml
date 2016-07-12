@@ -1,10 +1,10 @@
 postgres: &postgres
   adapter:    postgresql
-  username:   postgres # Your PostgreSQL Username
-  password:   # Your Password
+  username:   your_username
+  password:   your_password
   encoding:   utf8
-  host:       localhost
-  database:   tapster_development
+  host:       your_host
+  database:   your_database
 
 sqlite: &sqlite
   adapter:    sqlite3
@@ -23,6 +23,6 @@ mysql: &mysql
 
 development:
   # Pick your database adapter!
-  # <<: *postgres # Uncomment this line for Postgres.
-  <<: *sqlite # Uncomment this for SQLite.
+  <<: *postgres # Uncomment this line for Postgres.
+  # <<: *sqlite # Uncomment this for SQLite.
   # <<: *mysql # Uncomment this line for MySQL.

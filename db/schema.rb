@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20150109223518) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "episodes", force: :cascade do |t|
     t.integer  "episode_id"
     t.string   "title"
@@ -23,6 +26,6 @@ ActiveRecord::Schema.define(version: 20150109223518) do
     t.datetime "updated_at"
   end
 
-  add_index "episodes", ["episode_id"], name: "index_episodes_on_episode_id", unique: true
+  add_index "episodes", ["episode_id"], name: "index_episodes_on_episode_id", unique: true, using: :btree
 
 end
